@@ -1,0 +1,10 @@
+name: Weds_Greenplum
+description: |
+   Greenplum images
+version:  1.0.0
+category:  demo
+maintainer:  weds
+license: demo:v1.0.0
+projectURL: https://github.com/lydu/greenplum_cluster
+
+

@@ -1,0 +1,24 @@
+version: '2'
+.catalog:
+  name: "greenplum_cluster"
+  version: "v0.0.1"
+  description: "greenplum cluster."
+  uuid: public-0
+  minimum_rancher_version: v1.0.0
+services:
+  gpmaster:
+    scale: 1
+    start_on_create: true
+    labels:
+      io.rancher.container.requested_ip: "10.42.200.210"
+  gpnode1:
+    scale: 1
+    start_on_create: true
+    labels:
+      io.rancher.container.requested_ip: "10.42.200.215"
+  gpnode2:
+    scale: 1
+    start_on_create: true
+    labels:
+      io.rancher.container.requested_ip: "10.42.200.220"
+
