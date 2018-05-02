@@ -13,7 +13,6 @@ services:
      volumes:
        - /opt/gpmaster/gpdata:/home/gpadmin/gpdata
        - /opt/gpmaster/conf:/home/gpadmin/conf
-       - /opt/gpmaster/etc:/etc
      privileged: true
      tty: true
   gpnode1:
@@ -31,7 +30,6 @@ services:
        - "20004:43001"
      volumes:
        - /opt/gpnode1/gpdata:/home/gpadmin/gpdata
-       - /opt/gpnode1/etc:/etc
      privileged: true
      tty: true
   gpnode2:
@@ -49,8 +47,6 @@ services:
        - "20008:43001"
      volumes:
        - /opt/gpnode2/gpdata:/home/gpadmin/gpdata
-       - /opt/gpnode2/etc:/etc
-
      privileged: true
      tty: true
 
