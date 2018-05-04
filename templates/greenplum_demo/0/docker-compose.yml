@@ -37,7 +37,7 @@ services:
      hostname: sdw2
      labels:
       io.rancher.scheduler.global: 'true'
-      io.rancher.scheduler.affinity:host_label: key1=110
+      io.rancher.scheduler.affinity:host_label: key1=106
      networks:
        - docker_gwbridge
      ports:
