@@ -10,6 +10,7 @@ services:
        - docker_gwbridge
      ports:
        - "20000:2345"
+       - "20008:28080"
      volumes:
        - /opt/gpmaster/gpdata:/home/gpadmin/gpdata
        - /opt/gpmaster/conf:/home/gpadmin/conf
@@ -26,8 +27,8 @@ services:
      ports:
        - "20001:40000"
        - "20002:40001"
-       - "20003:43000"
-       - "20004:43001"
+       - "20003:40002"
+       - "20004:28080"
      volumes:
        - /opt/gpnode1/gpdata:/home/gpadmin/gpdata
      privileged: true
@@ -43,8 +44,8 @@ services:
      ports:
        - "20005:40000"
        - "20006:40001"
-       - "20007:43000"
-       - "20008:43001"
+       - "20007:40002"
+       - "20008:28080"
      volumes:
        - /opt/gpnode2/gpdata:/home/gpadmin/gpdata
      privileged: true
